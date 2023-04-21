@@ -1,0 +1,67 @@
+body{
+    margin: 0;/*Remove space around body*/
+    /*To bring the items center horizontally*/
+    display: flex;
+    justify-content: center;
+    /*To bring items to center vertically*/
+    height: 100vh;/*vh - view port height*/
+    align-items: center; 
+    text-align: center; /*Bring inline contents to center*/
+    background-color: yellow;
+    font-family: cursive;
+}
+
+.form{
+    background-color: white;
+    padding: 20px;
+    /*Attributes:- 
+    1.Pos of horizontal shadow
+    2.Pos of vertical shadow              
+    3.Blur radius
+    4.rgba(red,green,blue,alpha value) => Decrease transparency
+    */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3) ;
+    border-radius: 10px;/*Rounded border*/
+    margin: 10px;
+}
+
+.input{
+    display: block;/*Cover the enter line*/
+    width: 100%;
+    /*To avoid unequal spacing, using box-sizing: border-box*/
+    box-sizing: border-box;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    border: solid 4px green;
+    color: green;
+}
+/*To get hold of placeholder of input box => It is a pseudo element*/
+.input::placeholder{
+    color: lightgray;
+    font-family: cursive;
+}
+
+.btn{
+    background-color: green;
+    color: white;
+    border: none;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    font-family: cursive;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+/*For hover effects tap to hover => a pseudo class*/
+.btn:hover{
+    filter: brightness(0.9);/*Will be dim if we hover over*/
+}
+
+.score{
+    color: green;
+    text-align: right;
+}
